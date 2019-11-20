@@ -11,8 +11,18 @@
         <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
         
         <script type="text/babel">
+            var Title = React.createClass({
+                render: function () {
+                    return(
+                        <div>
+                            <h1>Titulo!</h1>
+                            <span>Hello World</span>
+                        </div>
+                    )
+                }
+            })
             ReactDOM.render(
-                <h1>Hello World!</h1>,
+                <Title />,
                 document.getElementById('app')
             )
         </script>
